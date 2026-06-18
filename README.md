@@ -1,4 +1,4 @@
-# Trabalho Final – Algoritmos e Estruturas de Dados I
+# Trabalho Final – Algoritmos I
 
 ## 🪐 Disciplina
 Algoritmos 1 
@@ -49,6 +49,4 @@ Jogos_Pygame/
 
 Após abrir o diretório do projeto no VS Code, abra o terminal e execute o comando abaixo para iniciar o jogo:
 
-python PygameWars.py
-
-
+python PygameWars.py 

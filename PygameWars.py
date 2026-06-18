@@ -67,6 +67,7 @@ ultimo_tiro_inimigo = pygame.time.get_ticks()
 
 tempo_hiperespaco = 0
 tempo_mensagem = 0
+tempo_evento_400 = 0
 
 estado = "MENU"
 
@@ -235,6 +236,7 @@ while rodando:
                 mensagem_evento = "CINTURÃO DE ASTERÓIDES DETECTADO"
                 tempo_mensagem = tempo_atual
                 evento_400 = True
+                tempo_evento_400 = tempo_atual 
 
             if energia_hiperespaco >=600 and evento_600 == False:
                 mensagem_evento = "DEFESAS ATIVADAS"
@@ -250,8 +252,16 @@ while rodando:
                     x = random.randint(25, LARGURA - 25)
                     asteroides.append([x, 0])
                     ultimo_asteroide = tempo_atual
+
+            if evento_400:
+                tempo_do_evento = tempo_atual - tempo_evento_400
+                intervalo_tiro_inimigo = 800 - (tempo_do_evento // 1000) * 25
+                if intervalo_tiro_inimigo < 450:
+                    intervalo_tiro_inimigo = 450
+            else:
+                intervalo_tiro_inimigo = 800
             
-            if tempo_atual - ultimo_tiro_inimigo >= 800:
+            if tempo_atual - ultimo_tiro_inimigo >= intervalo_tiro_inimigo:
                 if inimigo1_ativo:
                     tiros_inimigos.append([inimigo1_x, inimigo1_y])
 
