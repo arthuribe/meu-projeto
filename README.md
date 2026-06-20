@@ -42,8 +42,7 @@ Jogos_Pygame/
 │   └── vader_breath.mp3
 │
 ├── PygameWars.py
-├── README.md
-└── trabalho_final.py
+└── README.md
 
 ## 🚀 Execução
 
