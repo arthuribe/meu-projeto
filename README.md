@@ -28,21 +28,21 @@ O sistema foi desenvolvido aplicando conceitos fundamentais de **Programação E
 
 ## 📁 Estrutura do Projeto
 
-Jogos_Pygame/
-│
-├── imagens/
-│   ├── asteroides.png
-│   ├── jedi.png
-│   └── tie.png
-│
-├── sons/
-│   ├── duel_of_the_fates.mp3
-│   ├── star_wars_theme.mp3
-│   ├── tie_fighter.mp3
-│   └── vader_breath.mp3
-│
-├── PygameWars.py
-└── README.md
+Jogos_Pygame/ </br>
+│ </br>
+├── imagens/ </br>
+│   ├── asteroides.png </br>
+│   ├── jedi.png </br>
+│   └── tie.png </br>
+│ </br>
+├── sons/ </br>
+│   ├── duel_of_the_fates.mp3 </br>
+│   ├── star_wars_theme.mp3 </br>
+│   ├── tie_fighter.mp3 </br>
+│   └── vader_breath.mp3 </br>
+│ </br>
+├── PygameWars.py </br>
+└── README.md </br>
 
 ## 🚀 Execução
 
